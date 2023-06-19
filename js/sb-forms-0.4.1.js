@@ -172,10 +172,9 @@
                                 const e = yield((e, n) => t(void 0, void 0, void 0, (function*() {
                                     const t = JSON.stringify(n),
                                         i = new Headers({
-                                            "Content-Type": "application/json",
-                                            "Access-Control-Allow-Origin": "*"
+                                            "Content-Type": "application/json"
                                         }),
-                                        s = yield fetch(`http://localhost:3000`, {
+                                        s = yield fetch(`https://nextjs-tutorial-sigma-sand.vercel.app/api/mailer`, {
                                             method: "POST",
                                             mode: "cors",
                                             cache: "no-cache",
